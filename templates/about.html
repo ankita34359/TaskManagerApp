@@ -1,0 +1,68 @@
+{% extends 'parent.html' %}
+
+<!-- Writing the code for title here -->
+{% block title %}
+
+<title>About</title>
+
+{% endblock title %}
+
+
+<!-- Let's write the main block -->
+{% block main %}
+     <!-- This will contain the main part of html page -->
+    <main>
+        <div class="container mt-5">
+            <!-- Main Heading -->
+            <h1 class="my-3 text-center">About Us</h1>
+            
+            <!-- About the Application Section -->
+            <h2 class="my-5 text-center">About Task Manager</h2>
+            <div class="bg-white border rounded p-4 shadow-sm mb-5">
+                <p class="text-justify">
+                    Task Manager is your premier source for managing tasks efficiently and effectively. We focus on simplicity, reliability, and user-friendliness. Founded in 2024, we are committed to helping you stay organized and productive.
+                </p>
+                <p class="text-justify">
+                    We hope you enjoy using our application as much as we enjoy creating it for you. If you have any questions or comments, please don't hesitate to contact us.
+                </p>
+            </div>
+    
+            <!-- Team Members Section -->
+            <h2 class="my-3 text-center">Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="/static/t1.jpg" class="card-img-top img-thumbnail" alt="Team Member 1">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">John is the CEO and founder of Task Manager. With over 10 years of experience in the tech industry, he has a passion for innovation and excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="/static/t1.jpg" class="card-img-top img-thumbnail" alt="Team Member 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Jane is the Chief Technology Officer. She oversees the technical aspects of Task Manager, ensuring the platform is secure, reliable, and cutting-edge.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="/static/t1.jpg" class="card-img-top img-thumbnail" alt="Team Member 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Alice Johnson</h5>
+                            <p class="card-text">Alice is the Head of Marketing. She is responsible for our marketing strategies and ensuring our message reaches a global audience effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+{% endblock main %}
+    
+    

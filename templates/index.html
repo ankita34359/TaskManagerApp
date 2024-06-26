@@ -1,0 +1,74 @@
+<!-- Index page will inherit the content from parent.html template -->
+
+{% extends 'parent.html' %}
+
+<!-- Writing the code for title here -->
+ {% block title %}
+
+ <title>Home</title>
+
+ {% endblock title %}
+
+
+ {% block main %}
+    <!-- This will contain the main part of html page -->
+    <main> 
+
+        <!-- Heading 1 -->
+        <div class="container mt-5 " >
+        <h2 class="my-3 text-center">Add a Task</h2>
+       
+        <!-- Form for Tasks -->
+        <form class="text-center border p-4 border-thick rounded">
+            <div class="mb-3 d-flex justify-content-center">
+              <div class="mb-3 col-4">
+              <label for="taskTitle" class="form-label">Title</label>
+              <input type="text" class="form-control" id="taskTitle">
+              </div>
+            </div>
+            <div class="mb-3 d-flex justify-content-center">
+              <div class="mb-3 col-4">
+              <label for="taskDescription" class="form-label">Description</label>
+              <textarea class="form-control" id="taskDescription" rows="3" ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+        </div>
+
+           <!-- Heading 2 -->
+        <h2 class="my-5 text-center">Your Task's</h2>
+
+          <!-- Table for viewing the task -->
+          <div class="container p-2 rounded bg-light">
+          <table class="table text-center table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Sno</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+
+    </main>
+ {% endblock main %}
+    
+
