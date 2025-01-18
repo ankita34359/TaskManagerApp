@@ -15,7 +15,7 @@ The **Task Manager App** is a web-based application developed using Flask. It is
 
 - **Backend**: Flask (Python)
 - **Frontend**: HTML, CSS, Jinja2 Templates
-- **Database**: SQLite (or any preferred database)
+- **Database**: SQLite 
 
 ## Installation
 
@@ -58,7 +58,7 @@ The **Task Manager App** is a web-based application developed using Flask. It is
 
 ## Screenshots
 
-(Add screenshots of the app interface here, if available.)
+![Screenshot](i2.png)
 
 ## Contributing
 
